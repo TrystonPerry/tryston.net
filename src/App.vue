@@ -30,7 +30,9 @@
     </section>
 
     <section class="w-full max-w-6xl m-auto">
-      <div class="p-4 py-24 md:px-12">
+      <h2 class="px-4 mt-10 text-4xl md:text-6xl">My Design Process</h2>
+
+      <div class="p-4 pb-24 md:px-12">
         <div
           class="relative flex flex-col flex-col-reverse md:flex-row w-full bg-gray-800 rounded m-2 mb-24"
         >
@@ -110,14 +112,15 @@
       </div>
     </section>
 
-    <section class="w-full max-w-6xl m-auto">
-      <h2 class="text-6xl">Work Experience</h2>
+    <section class="w-full max-w-6xl m-auto px-4">
+      <h2 class="text-4xl md:text-6xl">Work Experience</h2>
 
-      <div class="relative w-full h-full" style="max-height:24rem; overflow:none">
+      <div class="w-full h-full">
         <div class="p-6 bottom-0 w-full">
           <h3 class="text-4xl leading-10">Nanome Inc.</h3>
           <div class="text-xl">Front-End Developer</div>
-          <div class="mb-3">2019 - 2020</div>
+          <div>2019 - 2020</div>
+          <a href="https://nanome.ai" class="block mb-3 text-blue-300 underline">Website</a>
           <ul class="list-disc pl-6">
             <li>Built new landing page designs in Figma, went through iterations, and implemented them in a Vue.js front-end.</li>
             <li>Improved enterprise sales pipeline by designing new landing pages from scratch https://home.nanome.ai/commercial.</li>
@@ -125,6 +128,54 @@
             <li>Collaborated with co-workers in code review and pull requests.</li>
             <li>Stayed SEO and accessibility conscious.</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full h-full max-w-6xl m-auto mt-10 px-4">
+      <h2 class="text-4xl md:text-6xl mb-6">Projects</h2>
+
+      <div class="md:flex flex-wrap">
+        <div class="md:flex md:w-6/12 rounded">
+          <a href="https://demo.doice.io" class="flex flex-col rounded bg-gray-800">
+            <img
+              src="https://tryston.net/images/playspace.jpg"
+              class="w-full h-full object-cover rounded-t"
+            />
+            <div class="p-4">
+              <h3 class="text-2xl leading-7">Doice</h3>
+              <div class="text-lg mb-2">June 2020 - Present</div>
+              <div>Doice is an open-source self-deployable platform for hanging with friends. Talk over voice chat, share your screen, watch YouTube together. It's built with customization in mind, so you can configure your instance however you want.</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="md:flex md:w-6/12 rounded">
+          <a href="https://pstv.herokuapp.com" class="flex flex-col rounded bg-gray-800">
+            <img
+              src="https://tryston.net/images/playspace.jpg"
+              class="w-full h-full object-cover rounded-t"
+            />
+            <div class="p-4">
+              <h3 class="text-2xl leading-7">PlaySpace</h3>
+              <div class="text-lg mb-2">April 2019 - April 2020</div>
+              <div>PlaySpace is a video streaming social network where users can stream games and hang out with viewers.</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="md:flex md:w-6/12 rounded">
+          <a href="https://pstv.herokuapp.com" class="flex flex-col rounded bg-gray-800">
+            <img
+              src="https://tryston.net/images/playspace.jpg"
+              class="w-full h-full object-cover rounded-t"
+            />
+            <div class="p-4">
+              <h3 class="text-2xl leading-7">PlaySpace</h3>
+              <div class="text-lg mb-2">April 2019 - April 2020</div>
+              <div>PlaySpace is a video streaming social network where users can stream games and hang out with viewers.</div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
