@@ -419,8 +419,7 @@ body {
 }
 
 .bubble-tooltip-text {
-  background: #2d3748;
-  color: #fff;
+  background: #fff;
   font-family: "Roboto";
   font-style: bold;
   font-size: 12px;

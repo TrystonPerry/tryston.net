@@ -3,5 +3,16 @@
 @tailwind utilities;
 
 body {
-  font-family: "Roboto", "arial";
+  font-family: "Raleway", "arial";
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    background: rgb(202, 109, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(202, 109, 255, 1) 0%,
+      rgba(178, 171, 242, 1) 100%
+    );
+  }
 }
