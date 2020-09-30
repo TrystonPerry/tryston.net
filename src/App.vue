@@ -10,16 +10,18 @@
           class="w-full md:w-6/12 p-4 md:pl-12 my-48 text-center md:text-left flex flex-col justify-center"
           style="z-index:1;"
         >
-          <div>
-            <h1 class="text-4xl md:text-6xl leading-10 text-white">
+          <div class="text-primary">
+            <h1 class="text-4xl md:text-6xl leading-10">
               Tryston Perry
             </h1>
-            <p class="text-xl md:text-4xl md:mt-4 mb-6 text-white">
+            <p class="text-xl md:text-4xl md:mt-4 mb-6">
               Web Developer
             </p>
             <a
-              href="mailto:tryston@trystonmperry.com"
-              class="email-me inline-block px-6 py-3 md:px-8 md:py-4 rounded text-lg duration-100 transform hover:scale-105"
+              href="mailto:me@tryston.net"
+              target="_blank"
+              class="inline-block bg-white text-primary px-6 py-4 md:px-8 md:py-4 rounded duration-100 transform hover:scale-105 hover:text-white hover:bg-primary hover:shadow-lg hover:font-bold"
+              style="border:2px solid #CA6DFF"
               >Email Me</a
             >
           </div>
@@ -30,73 +32,35 @@
       </header>
     </div>
 
-    <Card title="About Me">
-      <div class="flex flex-col md:flex-row">
+    <div class="w-full bg-primary text-white px-4 py-16 pb-64">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
         <img
           src="/images/me.jpg"
           alt="Headshot of Tryston Perry"
-          class="w-48 rounded"
+          class="w-24 md:w-48 rounded-full"
         />
-        <div class="px-12">
+        <div class="p-4 md:px-12">
+          <h2 class="font-bold">Hey 👋, I'm Tryston!</h2>
           <p class="mt-3">
-            I'm Tryston, a web developer with a focus on design. I've been
-            designing things since I was 13, and have always had a passion for
-            it. Now it's my job.
+            I've been a web developer for 3 years working on everything from
+            landing page designs to building full-stack web apps. I'm
+            laser-focused on delivering quality results in fast-paced
+            environments.
           </p>
-          <a
-            href="resume.trystonperry.com"
-            target="_blank"
-            class="inline-block text-primary px-3 py-2 md:px-4 md:py-2 mt-3 rounded text-sm duration-100 transform hover:scale-105 hover:text-white hover:bg-primary hover:shadow-lg"
-            style="border:2px solid #ca6dff"
-            >View My Resume</a
-          >
+          <div class="text-center md:text-left">
+            <a
+              href="http://resume.trystonperry.com"
+              target="_blank"
+              class="inline-block text-white px-3 py-2 md:px-4 md:py-2 mt-3 rounded text-sm duration-100 transform hover:scale-105 hover:text-primary hover:bg-white hover:shadow-lg hover:font-bold"
+              style="border:2px solid #fff"
+              >Resume.pdf</a
+            >
+          </div>
         </div>
       </div>
-    </Card>
+    </div>
 
-    <Card title="Work Experience">
-      <div class="mb-8">
-        <h3 class="text-4xl leading-10">Nanome Inc.</h3>
-        <div>
-          <div class="text-xl">Front-End Developer</div>
-          <div>2019 - 2020</div>
-          <a
-            href="https://nanome.ai"
-            target="_blank"
-            class="block mb-3 text-blue-600 underline"
-            >Website</a
-          >
-          <p>
-            Starting as an internship, this transitioned into a part-time role
-            as a Front-End developer. This consisted of designing new landing
-            pages, marketing material and web app components. I built an
-            entireley new sales pipeline for enterprise customers to purchase
-            their software. I also improved their web page load times by an
-            average of 32%.
-          </p>
-        </div>
-      </div>
-
-      <div class="w-full h-full">
-        <h3 class="text-4xl leading-10">2020 Fashion</h3>
-        <div>
-          <div class="text-xl">Front-End Developer</div>
-          <div>2020</div>
-          <a
-            href="https://2020.fashion"
-            target="_blank"
-            class="block mb-3 text-blue-300 underline"
-            >Website</a
-          >
-          <ul class="list-disc pl-6">
-            <li>Rapidly itterated on vanilla HTML/CSS landing page.</li>
-            <li>Implemented Email capturer using Airtable back-end.</li>
-          </ul>
-        </div>
-      </div>
-    </Card>
-
-    <Card title="Skills">
+    <Card title="Skills" style="margin-top:-12rem">
       <ul class="md:flex flex-wrap justify-center mt-6 text-center">
         <Skill
           title="Front-End"
@@ -126,58 +90,115 @@
       </ul>
     </Card>
 
-    <Card title="Projects">
-      <Project></Project>
-    </Card>
-
-    <section class="w-full h-full max-w-6xl m-auto mt-10 px-4">
-      <h2 class="text-4xl md:text-6xl mb-6">Projects</h2>
-
-      <div class="md:flex flex-wrap">
-        <div
-          class="md:flex md:w-6/12 rounded p-3 shadow duration-100 transform hover:scale-105 hover:shadow-lg"
-        >
-          <a
-            href="https://demo.doice.io"
-            class="flex flex-col rounded bg-gray-800"
-          >
-            <img src="https://i.imgur.com/vl20Fm3.png" class="rounded-t" />
-            <div class="p-4">
-              <h3 class="text-2xl leading-7 font-bold">Doice</h3>
-              <div class="text-lg mb-2">June 2020 - Present</div>
-              <div>
-                Doice is an open-source self-deployable platform for hanging
-                with friends. Talk over voice chat, share your screen, watch
-                YouTube together. It's built with customization in mind, so you
-                can configure it to your use case.
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div
-          class="md:flex md:w-6/12 rounded p-3 shadow duration-100 transform hover:scale-105 hover:shadow-lg"
-        >
-          <a
-            href="https://pstv.herokuapp.com"
-            class="flex flex-col rounded bg-gray-800"
-          >
-            <img
-              src="http://localhost:8080/images/implementation.jpg"
-              class="rounded-t"
-            />
-            <div class="p-4">
-              <h3 class="text-2xl leading-7 font-bold">PlaySpace</h3>
-              <div class="text-lg mb-2">April 2019 - April 2020</div>
-              <div>
-                PlaySpace is a video streaming social network where users can
-                stream games and hang out with viewers.
-              </div>
-            </div>
-          </a>
+    <Card title="Work Experience">
+      <div class="mb-8">
+        <h3 class="text-4xl leading-10">Nanome Inc.</h3>
+        <div>
+          <div class="text-xl">Front-End Developer</div>
+          <div>2019 - 2020</div>
+          <div class="inline-block">
+            <a
+              href="https://nanome.ai"
+              target="_blank"
+              class="block mb-3 text-blue-600 underline"
+              >Website</a
+            >
+          </div>
+          <p>
+            Starting as an internship, this transitioned into a part-time role
+            as a Front-End developer. This consisted of designing new landing
+            pages, marketing material and web app components. I built an
+            entireley new sales pipeline for enterprise customers to purchase
+            their software. I also improved their web page load times by an
+            average of 32% by compressing and resizing images and videos to
+            their appropriate sizes.
+          </p>
         </div>
       </div>
 
+      <div class="w-full h-full">
+        <h3 class="text-4xl leading-10">2020 Fashion</h3>
+        <div>
+          <div class="text-xl">Front-End Developer</div>
+          <div>2020</div>
+          <div class="inline-block">
+            <a
+              href="https://2020.fashion"
+              target="_blank"
+              class="block mb-3 text-blue-600 underline"
+              >Website</a
+            >
+          </div>
+          <p>
+            A contract to build a landing page for the 2020 Fashion clothing
+            brand to collect emails and announce their product launch.
+          </p>
+        </div>
+      </div>
+    </Card>
+
+    <div class="w-full max-w-6xl mx-auto text-center px-2 pb-12">
+      <div class="my-6">
+        <h2 class="text-3xl font-bold">My Projects</h2>
+        <p>Here are some of my recent projects</p>
+      </div>
+
+      <div class="md:flex bg-white rounded-lg shadow-2xl mb-4">
+        <div class="md:w-6/12 flex-shrink-0">
+          <img
+            src="/images/doice.jpg"
+            class="w-full h-full object-cover rounded-lg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col p-4 text-left">
+          <h3 class="text-2xl">Doice</h3>
+          <p class="flex-grow mb-4">
+            An open source and self-deployable video chat app built using
+            JavaScript. Share screens, do video chat, or watch YouTube in sync.
+            Doice works entirely from the web browser using WebRTC.
+          </p>
+          <div>
+            <a
+              href="https://doice.io"
+              target="_blank"
+              class="inline-block bg-white text-doice px-3 py-2 md:px-4 md:py-2 text-sm rounded duration-100 transform hover:scale-105 hover:text-white hover:bg-doice hover:shadow-lg hover:font-bold"
+              style="border:2px solid #46B5D1"
+            >
+              Website
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="md:flex bg-white rounded-lg shadow-2xl">
+        <div class="md:w-6/12 flex-shrink-0">
+          <img
+            src="/images/playspace.jpg"
+            class="w-full h-full object-cover rounded-lg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col p-4 text-left">
+          <h3 class="text-2xl">PlaySpace</h3>
+          <p class="flex-grow mb-4">
+            A video streaming social network in the web browser. Inspired by
+            Twitch, but instead of channels for a single user you have
+            communities where multiple users can stream in a single room to an
+            audience. The website is no longer up because the project was
+            abandoned and the idea transitioned into Doice.
+          </p>
+          <div>
+            <a
+              href="https://github.com/TrystonPerry/Playspace-Frontend"
+              target="_blank"
+              class="inline-block bg-white text-playspace px-3 py-2 md:px-4 md:py-2 text-sm rounded duration-100 transform hover:scale-105 hover:text-white hover:bg-playspace hover:shadow-lg hover:font-bold"
+              style="border:2px solid #009DEE"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="text-center">
         <h3 class="font-bold mt-6 mb-2">Other Projects</h3>
         <ul>
@@ -236,20 +257,60 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <img
-      src="/images/bg-1.svg"
-      class="absolute top-0 left-0"
-      style="z-index:-1"
-    />
+    <div class="bg-primary text-white py-12 mt-12">
+      <div class="w-full max-w-6xl mx-auto">
+        <div
+          class="bg-gray-800 flex flex-col sm:flex-row py-8 px-12 mx-4 rounded-full items-center"
+          style="margin-top:-6rem"
+        >
+          <h4 class="font-bold text-3xl mb-3 sm:mb-0 flex-grow">Contact Me</h4>
+          <a
+            href="mailto:me@tryston.net"
+            target="_blank"
+            class="inline-block bg-white text-primary px-6 py-4 md:px-8 md:py-4 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-primary hover:shadow-lg hover:font-bold"
+            >Email Me</a
+          >
+        </div>
+      </div>
+      <footer class="flex flex-col items-center w-full pt-12 text-white">
+        <i class="text-xl mb-8">
+          "Work to create, play to learn"
+        </i>
+        <div class="flex mb-8">
+          <a
+            href="https://twitter.com/trystonperry"
+            target="_blank"
+            class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold mr-2"
+          >
+            <i class="fab fa-twitter text-primary"></i>
+          </a>
+          <a
+            href="https://github.com/trystonperry"
+            target="_blank"
+            class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold mr-2"
+          >
+            <i class="fab fa-github text-primary"></i>
+          </a>
+          <a
+            href="mailto:me@tryston.net"
+            target="_blank"
+            class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold"
+          >
+            <i class="fas fa-envelope text-primary"></i>
+          </a>
+        </div>
+
+        <p>© 2020 Tryston Perry, all rights reserved</p>
+      </footer>
+    </div>
   </div>
 </template>
 
 <script>
 import Bubbles from "./components/Bubbles";
 import Card from "./components/Card";
-import Project from "./components/Project";
 import Skill from "./components/Skill";
 
 export default {
@@ -258,9 +319,8 @@ export default {
   components: {
     Bubbles,
     Card,
-    Project,
-    Skill
-  }
+    Skill,
+  },
 };
 </script>
 
