@@ -18,7 +18,7 @@
               Web Developer
             </p>
             <a
-              href="mailto:me@tryston.net"
+              href="mailto:trystonmperry@gmail.com"
               target="_blank"
               class="inline-block bg-white text-primary px-6 py-4 md:px-8 md:py-4 rounded duration-100 transform hover:scale-105 hover:text-white hover:bg-primary hover:shadow-lg hover:font-bold"
               style="border:2px solid #CA6DFF"
@@ -49,7 +49,7 @@
           </p>
           <div class="text-center md:text-left">
             <a
-              href="http://resume.trystonperry.com"
+              href="/resume.pdf"
               target="_blank"
               class="inline-block text-white px-3 py-2 md:px-4 md:py-2 mt-3 rounded text-sm duration-100 transform hover:scale-105 hover:text-primary hover:bg-white hover:shadow-lg hover:font-bold"
               style="border:2px solid #fff"
@@ -92,10 +92,33 @@
 
     <Card title="Work Experience">
       <div class="mb-8">
+        <h3 class="text-4xl leading-10">Doice</h3>
+        <div>
+          <div class="text-xl">Lead Developer</div>
+          <div>May 2020 - Present</div>
+          <div class="inline-block">
+            <a
+              href="https://doice.io"
+              target="_blank"
+              class="block mb-3 text-blue-600 underline"
+              >Website</a
+            >
+          </div>
+          <p>
+            Lead Developer of Doice, an open-source self-deployable video chat
+            application in the web browser. Share screens, do video chat, and
+            watch YouTube in sync. Doice has been used for virtual meetups, tech
+            talks, and groups of friends. Currently, you must run your own
+            server, but we are building a paid option for less technical users.
+          </p>
+        </div>
+      </div>
+
+      <div class="mb-8">
         <h3 class="text-4xl leading-10">Nanome Inc.</h3>
         <div>
           <div class="text-xl">Front-End Developer</div>
-          <div>2019 - 2020</div>
+          <div>Mar. 2019 - Jan. 2020</div>
           <div class="inline-block">
             <a
               href="https://nanome.ai"
@@ -108,7 +131,7 @@
             Starting as an internship, this transitioned into a part-time role
             as a Front-End developer. This consisted of designing new landing
             pages, marketing material and web app components. I built an
-            entireley new sales pipeline for enterprise customers to purchase
+            entirely new sales pipeline for enterprise customers to purchase
             their software. I also improved their web page load times by an
             average of 32% by compressing and resizing images and videos to
             their appropriate sizes.
@@ -120,7 +143,7 @@
         <h3 class="text-4xl leading-10">2020 Fashion</h3>
         <div>
           <div class="text-xl">Front-End Developer</div>
-          <div>2020</div>
+          <div>Jan. 2020</div>
           <div class="inline-block">
             <a
               href="https://2020.fashion"
@@ -143,7 +166,7 @@
         <p>Here are some of my recent projects</p>
       </div>
 
-      <div class="md:flex bg-white rounded-lg shadow-2xl mb-4">
+      <!-- <div class="md:flex bg-white rounded-lg shadow-2xl mb-4">
         <div class="md:w-6/12 flex-shrink-0">
           <img
             src="/images/doice.jpg"
@@ -169,7 +192,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="md:flex bg-white rounded-lg shadow-2xl">
         <div class="md:w-6/12 flex-shrink-0">
           <img
@@ -267,7 +290,7 @@
         >
           <h4 class="font-bold text-3xl mb-3 sm:mb-0 flex-grow">Contact Me</h4>
           <a
-            href="mailto:me@tryston.net"
+            href="mailto:trystonmperry@gmail.com"
             target="_blank"
             class="inline-block bg-white text-primary px-6 py-4 md:px-8 md:py-4 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-primary hover:shadow-lg hover:font-bold"
             >Email Me</a
@@ -278,6 +301,7 @@
         <i class="text-xl mb-8">
           "Work to create, play to learn"
         </i>
+        <img src="/images/tp-white.png" class="h-24 mb-8" />
         <div class="flex mb-8">
           <a
             href="https://twitter.com/trystonperry"
@@ -294,7 +318,7 @@
             <i class="fab fa-github text-primary"></i>
           </a>
           <a
-            href="mailto:me@tryston.net"
+            href="mailto:trystonmperry@gmail.com"
             target="_blank"
             class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold"
           >
@@ -319,8 +343,8 @@ export default {
   components: {
     Bubbles,
     Card,
-    Skill,
-  },
+    Skill
+  }
 };
 </script>
 
