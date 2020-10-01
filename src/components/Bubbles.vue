@@ -95,6 +95,10 @@
 
 <script>
 export default {
+  data: () => ({
+    intervals: []
+  }),
+
   mounted() {
     const bubbles = document.getElementsByClassName("bubble");
 
@@ -289,7 +293,7 @@ export default {
       moveBubble(bubbles[i], bubblePos[i].x, bubblePos[i].y);
 
       // Set interval for bubble update code
-      setInterval(() => {
+      const intervalId = setInterval(() => {
         // Move the indexed bubble to new X and Y position
         moveBubble(bubbles[i], bubblePos[i].x, bubblePos[i].y);
 
@@ -369,11 +373,20 @@ export default {
           }
         }
       }, interval);
+
+      this.intervals.push(intervalId);
     }
 
     // Set the css property of HTML bubble transform to new X Y position
     function moveBubble(bubble, x, y) {
       bubble.style.transform = `translate(${x - 300}px, ${y + Y_OFFSET}px)`;
+    }
+  },
+
+  beforeDestroy() {
+    for (let i = this.intervals.length - 1; i >= 0; i--) {
+      clearInterval(this.intervals[i]);
+      this.intervals.splice(i, 1);
     }
   }
 };
