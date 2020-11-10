@@ -15,7 +15,7 @@
               Tryston Perry
             </h1>
             <p class="text-xl md:text-4xl md:mt-4 mb-6">
-              Web Developer
+              Full-Stack Developer
             </p>
             <a
               href="mailto:trystonmperry@gmail.com"
@@ -92,20 +92,20 @@
 
     <Card title="Work Experience">
       <div class="mb-8">
-        <h3 class="text-4xl leading-10">Flex Dental Solutions</h3>
+        <h3 class="text-4xl leading-10">CryptoAlarms</h3>
         <div>
-          <div class="text-xl">Full-Stack Developer</div>
-          <div>Feb. 2020 - Present</div>
+          <div class="text-xl">Founder</div>
+          <div>Oct. 2020 - Present</div>
           <div class="inline-block">
-            <a
+            <!-- <a
               href="https://flexdental.co"
               target="_blank"
               class="block mb-3 text-blue-600 underline"
               >Website</a
-            >
+            > -->
           </div>
           <p>
-            Managed their Electron dentist communication desktop app. Implemented group chat functionality with MySQL and Socket.io. Refactored React components to improve code reusability. Converted UI to Material Design. Squashed memory leaks by refactoring their global state management system. Debugged and re-wrote NPM package that showed notifications improperly.
+            Not launched yet, CryptoAlarms is an Android app that connects stock and cryptocurrency traders’ trade setups to phone alarms via webhooks. Built naively with Java / Android Studio, while the back-end is Node.js and Pushy.me.
           </p>
         </div>
       </div>
@@ -162,31 +162,6 @@
         <p>Here are some of my recent projects</p>
       </div>
 
-      <div class="md:flex bg-white rounded-lg shadow-2xl mb-4">
-        <div class="md:w-6/12 flex-shrink-0">
-          <img
-            src="/images/cryptoalarms.jpg"
-            class="w-full h-full object-cover rounded-lg"
-            alt=""
-          />
-        </div>
-        <div class="flex flex-col p-4 text-left">
-          <h3 class="text-2xl">CryptoAlarms</h3>
-          <p class="flex-grow mb-4">
-            Not launched yet, CryptoAlarms is an Android app that connects stock and cryptocurrency traders’ trade setups to phone alarms via webhooks. Built naively with Java / Android Studio, while the back-end is Node.js and Pushy.me.
-          </p>
-          <div>
-            <a
-              href="#"
-              target="_blank"
-              class="inline-block bg-white text-cryptoalarms px-3 py-2 md:px-4 md:py-2 text-sm rounded duration-100 transform hover:scale-105 hover:text-white hover:bg-cryptoalarms hover:shadow-lg hover:font-bold"
-              style="border:2px solid #f7941d"
-            >
-              Website (Not Online Yet)
-            </a>
-          </div>
-        </div>
-      </div>
       <div class="md:flex bg-white rounded-lg shadow-2xl mb-4">
         <div class="md:w-6/12 flex-shrink-0">
           <img
