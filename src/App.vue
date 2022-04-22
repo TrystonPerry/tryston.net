@@ -15,10 +15,10 @@
               Tryston Perry
             </h1>
             <p class="text-xl md:text-4xl md:mt-4 mb-6">
-              Full-Stack Developer
+              Front-End Developer
             </p>
             <a
-              href="mailto:trystonmperry@gmail.com"
+              href="mailto:trystonperry@proton.me"
               target="_blank"
               class="inline-block bg-white text-primary px-6 py-4 md:px-8 md:py-4 rounded duration-100 transform hover:scale-105 hover:text-white hover:bg-primary hover:shadow-lg hover:font-bold"
               style="border:2px solid #CA6DFF"
@@ -65,47 +65,154 @@
         <Skill
           title="Front-End"
           icon="fas fa-desktop"
-          skills="HTML, CSS, SCSS, JavaScript, React, Vue, Bootstrap 4, TailwindCSS"
+          skills="HTML, CSS, SCSS / SASS, JavaScript, React,js, Vue.js, Bootstrap 4, TailwindCSS"
         />
         <Skill
           title="Back-End"
           icon="fas fa-code"
-          skills="Node.js, Express.js, Socket.io, MongoDB, MySQL"
+          skills="Node.js, Express.js, WebSockets, MongoDB, MySQL, QuestDB"
         />
         <Skill
           title="DevOps"
           icon="fas fa-server"
-          skills="AWS, Digital Ocean, PM2, CI/CD, Git, Bash & SSH"
+          skills="Digital Ocean, PM2, Docker, Git, Bash & SSH"
         />
         <Skill
           title="Design"
           icon="fas fa-pen"
-          skills="Adobe Photoshop, Adobe Illustrator, Figma"
+          skills="Adobe Photoshop, Figma"
         />
         <Skill
           title="Other"
           icon="fas fa-cog"
-          skills="Agile Development, Unit Testing, Pair Programming, WebRTC"
+          skills="Agile Development, Unit Testing, Pair Programming"
         />
       </ul>
     </Card>
 
     <Card title="Work Experience">
       <div class="mb-8">
-        <h3 class="text-4xl leading-10">CryptoAlarms</h3>
-        <div>
-          <div class="text-xl">Founder</div>
-          <div>Oct. 2020 - Present</div>
-          <div class="inline-block">
-            <!-- <a
-              href="https://flexdental.co"
-              target="_blank"
-              class="block mb-3 text-blue-600 underline"
-              >Website</a
-            > -->
+        <carousel-3d
+          :height="252"
+          :width="504"
+          :controlsVisible="true"
+          :autoplay="true"
+        >
+          <slide :index="0">
+            <img
+              src="https://pbs.twimg.com/media/FQUQDTuVsAM7jjp?format=jpg&name=small"
+            />
+          </slide>
+          <slide :index="1">
+            <img
+              src="https://pbs.twimg.com/media/FQy9DzxUUAAZ-SB?format=jpg&name=small"
+            />
+          </slide>
+          <slide :index="2">
+            <img
+              src="https://pbs.twimg.com/media/FP6eN5BakAA0lVb?format=jpg&name=small"
+            />
+          </slide>
+          <slide :index="3">
+            <img
+              src="https://pbs.twimg.com/media/FPwqK4lVUAYm5Bv?format=jpg&name=small"
+            />
+          </slide>
+          <slide :index="4">
+            <img
+              src="https://pbs.twimg.com/media/FPmv03iVIAwRnJV?format=png&name=small"
+            />
+          </slide>
+        </carousel-3d>
+        <h3 class="text-4xl leading-10">🐍 Viper Charts</h3>
+        <div class="my-4">
+          <div class="text-xl font-bold">Founder</div>
+          <div>August 2021 - Present</div>
+          <a
+            href="http://intro.vipercharts.com"
+            target="_blank"
+            class="text-blue-600 underline"
+            >Website</a
+          >
+          <p class="my-4">
+            Viper Charts is an open-source platform / framework for charting and
+            comparing crypto-currency asset prices across exchanges and markets.
+            It’s built entirely from scratch as a solo project intent on
+            unifying all data in crypto. The platform is currently in a closed
+            beta state.
+          </p>
+          <div class="pl-3 text-sm">
+            <p class="my-2">
+              -Wrote functions to convert time and price values to pixel
+              locations based on screen dimensions and visible range.
+            </p>
+            <p class="my-2">
+              -Built a custom rendering engine to re-calculate pixel
+              instructions whenever the plotted data state changes.
+            </p>
+            <p class="my-2">
+              -Implemented a custom WebWorker message broker to offload CPU
+              intensive operations like chart updates to alternative CPU cores.
+              Thus, massively improving the responsivity of the UI and
+              preventing the hanging of the main thread.
+            </p>
+            <p class="my-2">
+              -Integrated mission critical data aggregation servers written in
+              Golang and run in Docker containers for collecting live
+              crypto-currency price action statistics.
+            </p>
+            <p class="my-2">
+              -Implemented a custom data granularity algorithm and g-zip
+              compression for historical market data and all client-server
+              requests to reduce bandwidth usage from ~33MB to ~5.5MB on large
+              requests. As it scales, it’s projected to save us $100’s of
+              dollars.
+            </p>
           </div>
-          <p>
-            Not launched yet, CryptoAlarms is an Android app that connects stock and cryptocurrency traders’ trade setups to phone alarms via webhooks. Built naively with Java / Android Studio, while the back-end is Node.js and Pushy.me.
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-4xl leading-10">Leap</h3>
+        <div>
+          <div class="text-xl font-bold">Co-Founder & CTO</div>
+          <div>February 2021 - June 2021</div>
+          <p class="my-4">
+            Leap (aka joinleap.co) was a live video podcast recording app
+            focused on bringing together podcasters and their audience with
+            real-time experiences.
+          </p>
+          <div class="pl-3 text-sm">
+            <p class="my-2">
+              -Managed and assigned tasks to our Junior Front-End dev to
+              distribute the workload.
+            </p>
+            <p class="my-2">
+              -Built realtime video/audio stream pipeline using WebRTC relay
+              servers and ffmpeg recording over RTP.
+            </p>
+            <p class="my-2">
+              -Designed and implemented our 1-Many and Many-Many MySQL Database
+              architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-4xl leading-10">The Bitcoin Wormhole App</h3>
+        <div>
+          <div class="text-xl font-bold">Contract</div>
+          <div>August 2020 - June 2021</div>
+          <a
+            href="https://bit.ly/3OrfJWt"
+            target="_blank"
+            class="text-blue-600 underline"
+            >Website</a
+          >
+          <p class="my-4">
+            A flutter app focused on providing a fun and interactive way to
+            learn about Bitcoin and its ecosystem.
           </p>
         </div>
       </div>
@@ -113,45 +220,29 @@
       <div class="mb-8">
         <h3 class="text-4xl leading-10">Nanome Inc.</h3>
         <div>
-          <div class="text-xl">Front-End Developer</div>
-          <div>Mar. 2019 - Jan. 2020</div>
-          <div class="inline-block">
-            <a
-              href="https://nanome.ai"
-              target="_blank"
-              class="block mb-3 text-blue-600 underline"
-              >Website</a
-            >
+          <div class="text-xl font-bold">Front-End Developer</div>
+          <div>March 2019 - March 2020</div>
+          <a
+            href="https://nanome.ai"
+            target="_blank"
+            class="text-blue-600 underline"
+            >Website</a
+          >
+          <div class="pl-3 mt-4 text-sm">
+            <p class="my-2">
+              -Went through design iterations with Senior executives using
+              Figma.
+            </p>
+            <p class="my-2">
+              -Implemented designs in SCSS using BEM, mobile-first and
+              progressive enhancement principles.
+            </p>
+            <p class="my-2">
+              -Wrote a custom image & gif compression build process into their
+              production pipeline to reduce asset file sizes and convert to
+              their appropriate resolutions.
+            </p>
           </div>
-          <p>
-            Starting as an internship, this transitioned into a part-time role
-            as a Front-End developer. This consisted of designing new landing
-            pages, marketing material and web app components. I built an
-            entirely new sales pipeline for enterprise customers to purchase
-            their software. I also improved their web page load times by an
-            average of 32% by compressing and resizing images and videos to
-            their appropriate sizes.
-          </p>
-        </div>
-      </div>
-
-      <div class="w-full h-full">
-        <h3 class="text-4xl leading-10">2020 Fashion</h3>
-        <div>
-          <div class="text-xl">Front-End Developer</div>
-          <div>Jan. 2020</div>
-          <div class="inline-block">
-            <a
-              href="https://2020.fashion"
-              target="_blank"
-              class="block mb-3 text-blue-600 underline"
-              >Website</a
-            >
-          </div>
-          <p>
-            A contract to build a landing page for the 2020 Fashion clothing
-            brand to collect emails and announce their product launch.
-          </p>
         </div>
       </div>
     </Card>
@@ -173,11 +264,11 @@
         <div class="flex flex-col p-4 text-left">
           <h3 class="text-2xl">Doice</h3>
           <p class="flex-grow mb-4">
-            An open-source self-deployable video chat
-            application in the web browser. Share screens, do video chat, and
-            watch YouTube in sync. Doice has been used for virtual meetups, tech
-            talks, and groups of friends. Currently, you must run your own
-            server, but we are building a paid option for less technical users.
+            An open-source self-deployable video chat application in the web
+            browser. Share screens, do video chat, and watch YouTube in sync.
+            Doice has been used for virtual meetups, tech talks, and groups of
+            friends. Currently, you must run your own server, but we are
+            building a paid option for less technical users.
           </p>
           <div>
             <a
@@ -259,7 +350,7 @@
         >
           <h4 class="font-bold text-3xl mb-3 sm:mb-0 flex-grow">Contact Me</h4>
           <a
-            href="mailto:trystonmperry@gmail.com"
+            href="mailto:trystonperry@proton.me"
             target="_blank"
             class="inline-block bg-white text-primary px-6 py-4 md:px-8 md:py-4 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-primary hover:shadow-lg hover:font-bold"
             >Email Me</a
@@ -287,7 +378,7 @@
             <i class="fab fa-github text-primary"></i>
           </a>
           <a
-            href="mailto:trystonmperry@gmail.com"
+            href="mailto:trystonperry@proton.me"
             target="_blank"
             class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold"
           >
@@ -295,7 +386,7 @@
           </a>
         </div>
 
-        <p>© 2020 Tryston Perry, all rights reserved</p>
+        <p>© 2022 Tryston Perry, all rights reserved</p>
       </footer>
     </div>
   </div>
@@ -312,8 +403,8 @@ export default {
   components: {
     Bubbles,
     Card,
-    Skill
-  }
+    Skill,
+  },
 };
 </script>
 
@@ -322,5 +413,8 @@ export default {
   color: rgb(202, 109, 255);
   background: #fff;
   box-shadow: 0px 0px 10px 5px rgb(202, 109, 255);
+}
+.carousel-3d-controls a span {
+  color: white !important;
 }
 </style>
