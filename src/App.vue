@@ -42,7 +42,7 @@
         <div class="p-4 md:px-12">
           <h2 class="font-bold">Hey 👋, I'm Tryston!</h2>
           <p class="mt-3">
-            I've been a web developer for 3 years working on everything from
+            I've been a web developer for 5 years working on everything from
             landing page designs to building full-stack web apps. I'm
             laser-focused on delivering quality results in fast-paced
             environments.
