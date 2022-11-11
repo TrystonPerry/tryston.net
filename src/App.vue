@@ -65,17 +65,17 @@
         <Skill
           title="Front-End"
           icon="fas fa-desktop"
-          skills="HTML, CSS, SCSS / SASS, JavaScript, React,js, Vue.js, Bootstrap 4, TailwindCSS"
+          skills="HTML, CSS, SCSS, JavaScript, React,js, Vue.js, Solidjs, TailwindCSS"
         />
         <Skill
           title="Back-End"
           icon="fas fa-code"
-          skills="Node.js, Express.js, WebSockets, MongoDB, MySQL, QuestDB"
+          skills="Node.js, WebSockets, MongoDB, MySQL"
         />
         <Skill
           title="DevOps"
           icon="fas fa-server"
-          skills="Digital Ocean, PM2, Docker, Git, Bash & SSH"
+          skills="Kuternetes, Docker, Git, Bash & SSH"
         />
         <Skill
           title="Design"
@@ -127,9 +127,9 @@
         <h3 class="text-4xl leading-10">🐍 Viper Charts</h3>
         <div class="my-4">
           <div class="text-xl font-bold">Founder</div>
-          <div>August 2021 - Present</div>
+          <div>August 2021 - November 2022</div>
           <a
-            href="http://intro.vipercharts.com"
+            href="https://github.com/vipercharts/viper-charts-js"
             target="_blank"
             class="text-blue-600 underline"
             >Website</a

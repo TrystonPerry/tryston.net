@@ -6,6 +6,10 @@ body {
   font-family: "Raleway", "arial";
 }
 
+main {
+  overflow-x: hidden;
+}
+
 @layer utilities {
   .bg-primary-gradient {
     background: rgb(202, 109, 255);
