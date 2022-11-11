@@ -127,7 +127,7 @@
         <h3 class="text-4xl leading-10">🐍 Viper Charts</h3>
         <div class="my-4">
           <div class="text-xl font-bold">Founder</div>
-          <div>August 2021 - November 2022</div>
+          <div>August 2021 - Present</div>
           <a
             href="https://github.com/vipercharts/viper-charts-js"
             target="_blank"
