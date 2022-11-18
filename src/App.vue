@@ -15,7 +15,7 @@
               Tryston Perry
             </h1>
             <p class="text-xl md:text-4xl md:mt-4 mb-6">
-              Front-End Developer
+              Senior Front-End Developer
             </p>
             <a
               href="mailto:trystonperry@proton.me"
