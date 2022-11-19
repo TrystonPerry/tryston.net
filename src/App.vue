@@ -15,7 +15,7 @@
               Tryston Perry
             </h1>
             <p class="text-xl md:text-4xl md:mt-4 mb-6">
-              Senior Front-End Developer
+              Senior Web Developer
             </p>
             <a
               href="mailto:trystonperry@proton.me"
@@ -42,7 +42,7 @@
         <div class="p-4 md:px-12">
           <h2 class="font-bold">Hey 👋, I'm Tryston!</h2>
           <p class="mt-3">
-            I've been a web developer for 5 years working on everything from
+            I've been a web developer for 5+ years working on everything from
             landing page designs to building full-stack web apps. I'm
             laser-focused on delivering quality results in fast-paced
             environments.
@@ -65,12 +65,12 @@
         <Skill
           title="Front-End"
           icon="fas fa-desktop"
-          skills="HTML, CSS, SCSS, JavaScript, React,js, Vue.js, Solidjs, TailwindCSS"
+          skills="HTML, CSS, SCSS, JavaScript, Svelte, React.js, TailwindCSS"
         />
         <Skill
           title="Back-End"
           icon="fas fa-code"
-          skills="Node.js, WebSockets, MongoDB, MySQL"
+          skills="NodeJS, MongoDB, MySQL"
         />
         <Skill
           title="DevOps"
@@ -88,6 +88,19 @@
           skills="Agile Development, Unit Testing, Pair Programming"
         />
       </ul>
+
+      <div>
+        <h2 class="text-lg font-bold">Extra tech I've worked with...</h2>
+        <p class="text-sm">
+          I've worked with a lot of stuff... 
+          <span class="italic">a <span class="font-bold">LOT</span></span>.
+          I'd describe myself as a generalist that uses whatever tool solves the problem.
+        </p>
+
+        <div class="my-3">
+          Shopify, WebGL (GPU data viz), WebRTC (real-time video/audio), Golang, QuestDB (timeseries db), Apache Kafka
+        </div>
+      </div>
     </Card>
 
     <Card title="Work Experience">
@@ -247,6 +260,16 @@
       </div>
     </Card>
 
+    <Card title="Testimonials">
+      <blockquote class="pb-2">
+        "Tryston built an author website for me and I can't recommend him high enough! He was so reliable and a very effective communicator through the whole process. He was also extremely prompt to have tasks finished when he stated they would be done. He was also great creatively when we brainstormed about different options. My site is both beautiful and user friendly. I could not have found a better person for this project and couldn’t be happier with the process and results!"
+      </blockquote>
+      <div>
+        <span class="font-bold">Clare Johnson</span> (2022) - Author of The First Noel a Tale of Friendship
+      </div>
+      <a href="https://thefirstnoelbook.com" target="_blank" class="text-blue-500 underline">Website</a>
+    </Card>
+
     <div class="w-full max-w-6xl mx-auto text-center px-2 pb-12">
       <div class="my-6">
         <h2 class="text-3xl font-bold">My Projects</h2>
@@ -376,6 +399,20 @@
             class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold mr-2"
           >
             <i class="fab fa-github text-primary"></i>
+          </a>
+          <a
+            href="https://medium.com/@trystonperry"
+            target="_blank"
+            class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold mr-2"
+          >
+            <i class="fab fa-medium text-primary"></i>
+          </a>
+          <a
+            href="https://dev.to/trystonperry"
+            target="_blank"
+            class="flex items-center justify-center bg-white text-white  h-12 w-12 rounded-full duration-100 transform hover:scale-105 hover:text-white hover:bg-white hover:shadow-lg hover:font-bold mr-2"
+          >
+            <i class="fab fa-dev text-primary"></i>
           </a>
           <a
             href="mailto:trystonperry@proton.me"
