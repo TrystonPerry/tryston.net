@@ -1,21 +1,20 @@
 module.exports = {
-  purge: [],
   theme: {
-    backgroundColor: theme => ({
+    backgroundColor: (theme) => ({
       ...theme("colors"),
       primary: "#ca6dff",
       cryptoalarms: "#f7941d",
       doice: "#46B5D1",
-      playspace: "#009DEE"
+      playspace: "#009DEE",
     }),
-    textColor: theme => ({
+    textColor: (theme) => ({
       ...theme("colors"),
       primary: "#ca6dff",
       cryptoalarms: "#f7941d",
       doice: "#46B5D1",
-      playspace: "#009DEE"
-    })
+      playspace: "#009DEE",
+    }),
   },
   variants: {},
-  plugins: []
+  plugins: [],
 };
