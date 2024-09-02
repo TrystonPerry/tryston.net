@@ -119,42 +119,21 @@
 
     <Card title="Work Experience">
       <div class="mb-8">
-        <carousel-3d
-          :height="252"
-          :width="504"
-          :controlsVisible="true"
-          :autoplay="true"
+        <Carousel
+          :items-to-show="1"
+          :wrap-around="true"
+          :autoplay="3000"
+          :transition="500"
+          :mouseDrag="false"
         >
-          <slide :index="0">
-            <img
-              src="https://pbs.twimg.com/media/FQUQDTuVsAM7jjp?format=jpg&name=small"
-            />
-          </slide>
+          <Slide v-for="(image, index) in carouselImages" :key="index">
+            <img :src="image" :alt="`Slide ${index + 1}`" />
+          </Slide>
 
-          <slide :index="1">
-            <img
-              src="https://pbs.twimg.com/media/FQy9DzxUUAAZ-SB?format=jpg&name=small"
-            />
-          </slide>
-
-          <slide :index="2">
-            <img
-              src="https://pbs.twimg.com/media/FP6eN5BakAA0lVb?format=jpg&name=small"
-            />
-          </slide>
-
-          <slide :index="3">
-            <img
-              src="https://pbs.twimg.com/media/FPwqK4lVUAYm5Bv?format=jpg&name=small"
-            />
-          </slide>
-
-          <slide :index="4">
-            <img
-              src="https://pbs.twimg.com/media/FPmv03iVIAwRnJV?format=png&name=small"
-            />
-          </slide>
-        </carousel-3d>
+          <template #addons>
+            <Navigation />
+          </template>
+        </Carousel>
 
         <h3 class="text-4xl leading-10">🐍 Viper Charts</h3>
 
@@ -174,7 +153,7 @@
           <p class="my-4">
             Viper Charts is an open-source platform / framework for charting and
             comparing crypto-currency asset prices across exchanges and markets.
-            It’s built entirely from scratch as a solo project intent on
+            It's built entirely from scratch as a solo project intent on
             unifying all data in crypto. The platform is currently in a closed
             beta state.
           </p>
@@ -207,7 +186,7 @@
               -Implemented a custom data granularity algorithm and g-zip
               compression for historical market data and all client-server
               requests to reduce bandwidth usage from ~33MB to ~5.5MB on large
-              requests. As it scales, it’s projected to save us $100’s of
+              requests. As it scales, it's projected to save us $100's of
               dollars.
             </p>
           </div>
@@ -315,7 +294,7 @@
         he stated they would be done. He was also great creatively when we
         brainstormed about different options. My site is both beautiful and user
         friendly. I could not have found a better person for this project and
-        couldn’t be happier with the process and results!"
+        couldn't be happier with the process and results!"
       </blockquote>
 
       <div>
@@ -520,6 +499,8 @@
 import Bubbles from "./components/Bubbles.vue";
 import Card from "./components/Card.vue";
 import Skill from "./components/Skill.vue";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
 
 export default {
   name: "App",
@@ -528,6 +509,21 @@ export default {
     Bubbles,
     Card,
     Skill,
+    Carousel,
+    Slide,
+    Navigation,
+  },
+
+  data() {
+    return {
+      carouselImages: [
+        "https://pbs.twimg.com/media/FQUQDTuVsAM7jjp?format=jpg&name=small",
+        "https://pbs.twimg.com/media/FQy9DzxUUAAZ-SB?format=jpg&name=small",
+        "https://pbs.twimg.com/media/FP6eN5BakAA0lVb?format=jpg&name=small",
+        "https://pbs.twimg.com/media/FPwqK4lVUAYm5Bv?format=jpg&name=small",
+        "https://pbs.twimg.com/media/FPmv03iVIAwRnJV?format=png&name=small",
+      ],
+    };
   },
 };
 </script>
@@ -538,7 +534,66 @@ export default {
   background: #fff;
   box-shadow: 0px 0px 10px 5px rgb(202, 109, 255);
 }
-.carousel-3d-controls a span {
-  color: white !important;
+
+.carousel__slide {
+  padding: 5px;
+}
+
+.carousel__viewport {
+  perspective: 2000px;
+}
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1.1);
+}
+
+.carousel__prev,
+.carousel__next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carousel__prev {
+  left: 10px;
+}
+
+.carousel__next {
+  right: 10px;
 }
 </style>

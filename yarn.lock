@@ -1616,9 +1616,9 @@ vite@^4.3.9:
     fsevents "~2.3.2"
 
 vue-carousel-3d@^2.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue-carousel-3d/-/vue-carousel-3d-1.0.1.tgz#2f69ca7fb1569e1804c43c52487b28d8420ad79d"
-  integrity sha512-Q50gIEB6plLdqYd3jLxte8RJsXNPQBcrRsgUey7nnaQ7TvtFoRu/4rpPP1FiihahE0v+IzVv8LLSSJxD+XrQVQ==
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-carousel-3d/-/vue-carousel-3d-1.0.0.tgz#3808b45f931b9681f40aad087bcb3230434658bf"
+  integrity sha512-NrGh/onpkJfZ+gIeSAQZGBUGlSUBYSqF8WvXfoTqwZZuXqgwQ2PbI/WCxZRqbkLv2GCyYeoFC0jgLrs08gPElQ==
   dependencies:
     core-js "^3.6.5"
     vue "^2.6.11"
@@ -1635,6 +1635,11 @@ vue-eslint-parser@^9.4.3:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue3-carousel@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.3.3.tgz#72cdddbeb5ab64dc6fc7d54ab133b644e4a72f8f"
+  integrity sha512-VsuOBE4LG9lxAiYGR9U7ps4RyJ4oFQGzk79/49ybvoxzNpahPAVWIDHKK3a1lOv0CSplFq6u4FvaFLZ8x3FgWg==
 
 vue@^2.6.11:
   version "2.7.16"
