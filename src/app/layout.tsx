@@ -11,6 +11,29 @@ export const metadata: Metadata = {
     shortcut: "/me.jpeg",
     apple: "/me.jpeg",
   },
+  openGraph: {
+    title:
+      "Tryston Perry - Senior Software Engineer, Shopify Expert, Community Builder",
+    description:
+      "Professional resume and portfolio of Tryston Perry, a Senior Software Engineer and Shopify Expert based in San Diego, CA.",
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Tryston Perry - Senior Software Engineer",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Tryston Perry - Senior Software Engineer, Shopify Expert, Community Builder",
+    description:
+      "Professional resume and portfolio of Tryston Perry, a Senior Software Engineer and Shopify Expert based in San Diego, CA.",
+    images: ["/preview.png"],
+  },
 };
 
 export default function RootLayout({
