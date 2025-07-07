@@ -77,9 +77,11 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link
+            <a
               href="/resume.pdf"
-              className="group bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-700 hover:border-purple-500/50"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-700 hover:border-purple-500/50 block"
             >
               <div>
                 <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-purple-500/30 transition-colors">
@@ -104,7 +106,7 @@ export default function Home() {
                   Download my resume as a PDF file
                 </p>
               </div>
-            </Link>
+            </a>
           </div>
 
           {/* Professional Highlights */}
