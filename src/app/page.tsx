@@ -213,7 +213,7 @@ export default function Home() {
             <div className="space-y-6">
               {/* Shopify Expertise */}
               <div className="bg-gray-700/30 rounded-lg p-6 border border-gray-600">
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col md:flex-row items-start gap-4">
                   <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-5 h-5 text-green-400"
@@ -253,7 +253,7 @@ export default function Home() {
 
               {/* Full-Stack Development */}
               <div className="bg-gray-700/30 rounded-lg p-6 border border-gray-600">
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col md:flex-row items-start gap-4">
                   <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-5 h-5 text-blue-400"
@@ -297,7 +297,7 @@ export default function Home() {
 
               {/* Community Leadership */}
               <div className="bg-gray-700/30 rounded-lg p-6 border border-gray-600">
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col md:flex-row items-start gap-4">
                   <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-5 h-5 text-purple-400"
@@ -340,7 +340,7 @@ export default function Home() {
 
               {/* Open Source Innovation */}
               <div className="bg-gray-700/30 rounded-lg p-6 border border-gray-600">
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col md:flex-row items-start gap-4">
                   <div className="w-10 h-10 bg-orange-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-5 h-5 text-orange-400"
@@ -386,7 +386,7 @@ export default function Home() {
       </div>
 
       {/* Fixed Social Links Sidebar */}
-      <div className="fixed top-6/12 translate-y-[-50%] right-0 z-50 flex flex-col gap-4 p-4">
+      <div className="fixed bottom-0 p-12 left-6/12 translate-x-[-50%] md:left-[unset] md:bottom-[unset] md:translate-x-0 md:top-6/12 md:translate-y-[-50%] md:right-0 z-50 flex md:flex-col gap-4 md:p-4">
         <a
           href="mailto:trystonperry@proton.me"
           className="group relative flex items-center"
