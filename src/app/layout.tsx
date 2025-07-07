@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tryston.net"),
   title:
     "Tryston Perry - Senior Software Engineer, Shopify Expert, Community Builder",
   description:
@@ -19,8 +20,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/preview.png",
-        width: 1200,
-        height: 630,
         alt: "Tryston Perry - Senior Software Engineer",
       },
     ],
