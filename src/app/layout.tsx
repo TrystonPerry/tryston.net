@@ -6,6 +6,11 @@ export const metadata: Metadata = {
     "Tryston Perry - Senior Software Engineer, Shopify Expert, Community Builder",
   description:
     "Professional resume and portfolio of Tryston Perry, a Senior Software Engineer and Shopify Expert based in San Diego, CA.",
+  icons: {
+    icon: "/me.jpeg",
+    shortcut: "/me.jpeg",
+    apple: "/me.jpeg",
+  },
 };
 
 export default function RootLayout({
