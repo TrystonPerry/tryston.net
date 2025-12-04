@@ -1,5 +1,21 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const notoSans = localFont({
+  src: [
+    {
+      path: "./fonts/NotoSans-VariableFont_wdth,wght.ttf",
+      style: "normal",
+    },
+    {
+      path: "./fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf",
+      style: "italic",
+    },
+  ],
+  variable: "--font-noto-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tryston.net"),
@@ -41,20 +57,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Sorts+Mill+Goudy:ital@0;1&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="antialiased">{children}</body>
+    <html lang="en" className="overflow-x-hidden w-screen overflow-y-visible">
+      <body
+        className={`${notoSans.variable} antialiased bg-gray-200 overflow-x-hidden w-screen overflow-y-visible`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
